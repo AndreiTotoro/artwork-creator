@@ -6,7 +6,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html>
 			<head></head>
-			<body className="flex divide-x">
+			<body className="flex divide-x-2 divide-gray-700">
 				<div className="basis-1/5">
 					<Layers />
 				</div>
