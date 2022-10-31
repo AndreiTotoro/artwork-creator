@@ -10,7 +10,7 @@ export default function LayerCreator({ layerData, setLayerData }) {
 	};
 
 	const handleSubmit = () => {
-		setLayerData([...layerData, input]);
+		setLayerData([...layerData, { name: input, images: [] }]);
 		setInput('');
 	};
 

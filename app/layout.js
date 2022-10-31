@@ -1,5 +1,5 @@
 import './globals.css';
-import Layers from './layers';
+import Layers from './Layers';
 import Settings from './Settings';
 
 export default function RootLayout({ children }) {
