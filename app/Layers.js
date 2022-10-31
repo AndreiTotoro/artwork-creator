@@ -9,9 +9,16 @@ export default function Layers() {
 		<div className="h-screen bg-void flex flex-col pl-4 pt-5 content-center">
 			<p className="text-white text-2xl pb-3">Layers</p>
 			{layerData.map((layer, id) => {
-				return <Layer key={id} name={layer} />;
+				return (
+					<Layer
+						key={id}
+						name={layer}
+						layerData={layerData}
+						setLayerData={setLayerData}
+					/>
+				);
 			})}
-			<LayerCreator />
+			<LayerCreator layerData={layerData} setLayerData={setLayerData} />
 		</div>
 	);
 }
