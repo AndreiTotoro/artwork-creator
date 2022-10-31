@@ -2,7 +2,18 @@
 import React from 'react';
 import { FiX } from 'react-icons/fi';
 
-export default function Layer({ name, currentLayer }) {
+export default function Layer({ name, currentLayer, layerData, setLayerData }) {
+	const handleClick = () => {
+		setLayerData(
+			layerData.filter((layer) => {
+				if (layer.name == name) {
+					return false;
+				}
+				return true;
+			})
+		);
+	};
+
 	return (
 		<div
 			className={`flex justify-between bg-midnight ${

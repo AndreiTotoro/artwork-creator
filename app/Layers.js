@@ -15,7 +15,12 @@ export default function Layers({
 			{layerData.map((layer, index) => {
 				return (
 					<button key={index} onClick={() => setCurrentLayer(layer.name)}>
-						<Layer currentLayer={currentLayer} name={layer.name} />
+						<Layer
+							currentLayer={currentLayer}
+							name={layer.name}
+							layerData={layerData}
+							setLayerData={setLayerData}
+						/>
 					</button>
 				);
 			})}
