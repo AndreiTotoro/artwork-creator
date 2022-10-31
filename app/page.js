@@ -25,7 +25,7 @@ export default function Home() {
 				/>
 			</div>
 			<div className="basis-3/5">
-				<Main />
+				<Main currentLayer={currentLayer} />
 			</div>
 			<div className="basis-1/5">
 				<Settings />
