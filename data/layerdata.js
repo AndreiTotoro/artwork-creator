@@ -1,1 +1,1 @@
-export const layerdata = ['head', 'body', 'legs'];
+export const layerdata = ['Head', 'Body', 'Legs'];
