@@ -8,7 +8,7 @@ function DragDrop({ layerData, setLayerData, currentLayer }) {
 		setLayerData(
 			layerData.map((elem) => {
 				if (elem.name == currentLayer) {
-					elem.images = [...elem.images, file];
+					elem.images = [...elem.images, URL.createObjectURL(file)];
 				}
 				return elem;
 			})
