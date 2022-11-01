@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 import React from 'react';
 import { FiX } from 'react-icons/fi';
 import Upload from '../components/Upload';
@@ -26,6 +27,24 @@ export default function Main({ currentLayer, layerData, setLayerData }) {
 				setLayerData={setLayerData}
 				currentLayer={currentLayer}
 			/>
+
+			<div>
+				{layerData.map((layer, index) => {
+					if (layer.images.length != 0 && layer.name == currentLayer) {
+						return layer.images.map((img) => {
+							return (
+								<Image
+									key={index}
+									src={img}
+									alt={'nothing'}
+									width={100}
+									height={100}
+								/>
+							);
+						});
+					}
+				})}
+			</div>
 		</div>
 	);
 }
