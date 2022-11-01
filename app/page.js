@@ -2,6 +2,7 @@
 
 import Head from 'next/head';
 import React, { useState } from 'react';
+import Placeholder from '../components/Placeholder';
 import Layers from './Layers';
 import Main from './Main';
 import Settings from './Settings';
@@ -25,7 +26,11 @@ export default function Home() {
 				/>
 			</div>
 			<div className="basis-3/5">
-				<Main currentLayer={currentLayer} />
+				{currentLayer == '' ? (
+					<Placeholder />
+				) : (
+					<Main currentLayer={currentLayer} />
+				)}
 			</div>
 			<div className="basis-1/5">
 				<Settings />
