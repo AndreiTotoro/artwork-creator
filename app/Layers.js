@@ -36,11 +36,7 @@ export default function Layers({
 							</button>
 						);
 					})}
-					<LayerCreator
-						layerData={layerData}
-						setLayerData={setLayerData}
-						className="self-end"
-					/>
+					<LayerCreator layerData={layerData} setLayerData={setLayerData} />
 				</div>
 				<Preview />
 			</div>
