@@ -18,6 +18,17 @@ export default function LayerCreator({ layerData, setLayerData }) {
 		}
 	};
 
+	const handleKeyPress = (e) => {
+		if (e.key == 'Enter') {
+			if (input == '') {
+				alert("You can't have an empty imput!");
+			} else {
+				setLayerData([...layerData, { name: input, images: [] }]);
+				setInput('');
+			}
+		}
+	};
+
 	return (
 		<div className="bg-midnight text-white  rounded-lg p-2 w-10/12 my-2 pl-2 flex justify-between">
 			<input
@@ -25,6 +36,7 @@ export default function LayerCreator({ layerData, setLayerData }) {
 				placeholder={'New Layer'}
 				className="rounded-md py-1 pl-2 text-gray-500 w-11/12 bg-void"
 				onChange={handleChange}
+				onKeyPress={handleKeyPress}
 			/>
 			<button onClick={handleSubmit}>
 				<FiCheckCircle color="gray" />
