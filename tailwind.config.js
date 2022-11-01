@@ -11,6 +11,9 @@ module.exports = {
 				void: '#1A1737',
 				midnight: '#191970',
 			},
+			height: {
+				'9/10': '90%',
+			},
 		},
 	},
 	plugins: [],
