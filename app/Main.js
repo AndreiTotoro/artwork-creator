@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import { FiX } from 'react-icons/fi';
+import Upload from '../components/Upload';
 
 export default function Main({ currentLayer }) {
 	return (
@@ -19,6 +20,8 @@ export default function Main({ currentLayer }) {
 				</button>
 			</div>
 			<p>Upload your images below: </p>
+
+			<Upload className="self-center" />
 		</div>
 	);
 }
