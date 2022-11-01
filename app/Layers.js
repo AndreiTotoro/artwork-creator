@@ -10,7 +10,7 @@ export default function Layers({
 	setLayerData,
 }) {
 	return (
-		<div className="h-screen bg-void flex flex-col pl-4 pt-5 content-center">
+		<div className="h-full bg-void flex flex-col pl-4 pt-5 content-center">
 			<p className="text-white text-2xl pb-3">Layers</p>
 			{layerData.map((layer, index) => {
 				return (
