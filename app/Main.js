@@ -3,7 +3,7 @@ import React from 'react';
 import { FiX } from 'react-icons/fi';
 import Upload from '../components/Upload';
 
-export default function Main({ currentLayer }) {
+export default function Main({ currentLayer, layerData, setLayerData }) {
 	return (
 		<div className="h-full bg-midnight pl-4 text-white flex flex-col pr-4 gap-7">
 			<p className="text-2xl pt-5">You have selected: {currentLayer}</p>
@@ -21,7 +21,11 @@ export default function Main({ currentLayer }) {
 			</div>
 			<p>Upload your images below: </p>
 
-			<Upload className="self-center" />
+			<Upload
+				layerData={layerData}
+				setLayerData={setLayerData}
+				currentLayer={currentLayer}
+			/>
 		</div>
 	);
 }

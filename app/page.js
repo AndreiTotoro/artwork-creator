@@ -29,7 +29,11 @@ export default function Home() {
 				{currentLayer == '' ? (
 					<Placeholder />
 				) : (
-					<Main currentLayer={currentLayer} />
+					<Main
+						currentLayer={currentLayer}
+						layerData={layerData}
+						setLayerData={setLayerData}
+					/>
 				)}
 			</div>
 			<div className="basis-1/5">
