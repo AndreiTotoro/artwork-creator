@@ -14,6 +14,9 @@ module.exports = {
 			height: {
 				'9/10': '90%',
 			},
+			minHeight: {
+				'1/10': '90vh',
+			},
 		},
 	},
 	plugins: [],

@@ -11,10 +11,10 @@ export default function Layers({
 	setLayerData,
 }) {
 	return (
-		<div className=" bg-void  pl-4 pt-5 h-screen">
+		<div className=" bg-void  pl-4 pt-5 h-full">
 			<p className="text-white text-2xl pb-3">Layers</p>
-			<div className="h-9/10 flex flex-col justify-between">
-				<div className="content-center flex flex-col">
+			<div className="flex flex-col justify-between min-h-1/10">
+				<div className="flex flex-col">
 					{layerData.map((layer, index) => {
 						return (
 							<button
@@ -36,7 +36,11 @@ export default function Layers({
 							</button>
 						);
 					})}
-					<LayerCreator layerData={layerData} setLayerData={setLayerData} />
+					<LayerCreator
+						layerData={layerData}
+						setLayerData={setLayerData}
+						className="self-end"
+					/>
 				</div>
 				<Preview />
 			</div>
