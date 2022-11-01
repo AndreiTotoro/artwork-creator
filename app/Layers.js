@@ -14,7 +14,16 @@ export default function Layers({
 			<p className="text-white text-2xl pb-3">Layers</p>
 			{layerData.map((layer, index) => {
 				return (
-					<button key={index} onClick={() => setCurrentLayer(layer.name)}>
+					<button
+						key={index}
+						onClick={() => {
+							if (layer.name == currentLayer) {
+								setCurrentLayer('');
+							} else {
+								setCurrentLayer(layer.name);
+							}
+						}}
+					>
 						<Layer
 							currentLayer={currentLayer}
 							name={layer.name}
