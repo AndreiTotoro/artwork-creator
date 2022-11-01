@@ -10,8 +10,12 @@ export default function LayerCreator({ layerData, setLayerData }) {
 	};
 
 	const handleSubmit = () => {
-		setLayerData([...layerData, { name: input, images: [] }]);
-		setInput('');
+		if (input == '') {
+			alert("You can't have an empty imput!");
+		} else {
+			setLayerData([...layerData, { name: input, images: [] }]);
+			setInput('');
+		}
 	};
 
 	return (
