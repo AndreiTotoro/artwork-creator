@@ -37,7 +37,12 @@ export default function Home() {
 				)}
 			</div>
 			<div className="basis-1/5">
-				<Settings />
+				<Settings
+					currentLayer={currentLayer}
+					setCurrentLayer={setCurrentLayer}
+					layerData={layerData}
+					setLayerData={setLayerData}
+				/>
 			</div>
 		</div>
 	);
