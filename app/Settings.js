@@ -9,8 +9,8 @@ export default function Settings({
 	return (
 		<div className="h-full text-white pl-9 pt-5 gap-5 bg-void flex flex-col">
 			<p className="text-2xl">Layer Name</p>
-			<div className="bg-midnight rounded-lg drop-shadow-lg mr-14">
-				<p className="p-3">{currentLayer}</p>
+			<div className="bg-midnight rounded-lg drop-shadow-lg mr-16">
+				<p className="p-2 px-4">{currentLayer}</p>
 			</div>
 		</div>
 	);

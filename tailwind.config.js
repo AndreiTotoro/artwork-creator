@@ -10,6 +10,7 @@ module.exports = {
 			colors: {
 				void: '#1A1737',
 				midnight: '#191970',
+				abyss: '#211E35',
 			},
 			height: {
 				'9/10': '90%',

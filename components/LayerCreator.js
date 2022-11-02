@@ -30,7 +30,7 @@ export default function LayerCreator({ layerData, setLayerData }) {
 	};
 
 	return (
-		<div className="bg-midnight text-white  rounded-lg p-2 w-10/12 my-2 pl-2 flex justify-between">
+		<div className="bg-midnight text-white  rounded-lg p-3 w-10/12 my-2 pl-2 flex justify-between">
 			<input
 				value={input}
 				placeholder={'New Layer'}
