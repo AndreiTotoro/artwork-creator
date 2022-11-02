@@ -11,7 +11,7 @@ export default function Main({ currentLayer, layerData, setLayerData }) {
 				You have selected: {currentLayer}
 			</p>
 			<div className="bg-candy rounded-md p-2 flex justify-between">
-				<p className="drop-shadow-md text-white font-bold">
+				<p className="drop-shadow-md text-void font-bold">
 					Not sure where to start? Check out our intro video{' '}
 					<a className="text-blue-500 underline" href="">
 						here
