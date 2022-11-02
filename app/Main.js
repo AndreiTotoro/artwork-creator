@@ -6,10 +6,12 @@ import Upload from '../components/Upload';
 
 export default function Main({ currentLayer, layerData, setLayerData }) {
 	return (
-		<div className="h-full bg-midnight pl-14 pr-14 text-white flex flex-col gap-7">
-			<p className="text-2xl pt-5">You have selected: {currentLayer}</p>
-			<div className="bg-green-400 rounded-md p-2 flex justify-between">
-				<p className="drop-shadow-md text-green-700">
+		<div className="h-full bg-gradient-to-b from-midnight to-void pl-14 pr-14 text-white flex flex-col gap-7">
+			<p className="font-bold text-3xl pt-5">
+				You have selected: {currentLayer}
+			</p>
+			<div className="bg-candy rounded-md p-2 flex justify-between">
+				<p className="drop-shadow-md text-white font-bold">
 					Not sure where to start? Check out our intro video{' '}
 					<a className="text-blue-500 underline" href="">
 						here

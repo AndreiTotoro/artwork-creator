@@ -8,9 +8,9 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				void: '#1A1737',
-				midnight: '#191970',
-				abyss: '#211E35',
+				void: '#160526',
+				midnight: '#3D1855',
+				candy: '#E42DFF',
 			},
 			height: {
 				'9/10': '90%',

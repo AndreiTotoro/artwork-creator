@@ -16,7 +16,7 @@ export default function Home() {
 	]);
 
 	return (
-		<div className="flex min-h-screen">
+		<div className="flex min-h-screen divide-gray-800">
 			<div className="basis-1/5">
 				<Layers
 					currentLayer={currentLayer}

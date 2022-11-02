@@ -11,8 +11,8 @@ export default function Layers({
 	setLayerData,
 }) {
 	return (
-		<div className=" bg-void  pl-4 pt-5 h-full">
-			<p className="text-white text-2xl pb-3">Layers</p>
+		<div className=" bg-gradient-to-b from-midnight to-void	  pl-4 pt-5 h-full">
+			<p className="text-white font-bold text-3xl pb-3">Layers</p>
 			<div className="flex flex-col justify-between min-h-1/10">
 				<div className="flex flex-col">
 					{layerData.map((layer, index) => {

@@ -16,7 +16,7 @@ export default function Layer({ name, currentLayer, layerData, setLayerData }) {
 
 	return (
 		<div
-			className={`flex justify-between drop-shadow-lg items-center bg-midnight ${
+			className={`flex justify-between drop-shadow-lg items-center bg-void ${
 				currentLayer == name ? 'border-purple-900 border-2 font-bold' : ''
 			} rounded-lg p-4 w-10/12 my-2 pl-6 text-white`}
 		>
