@@ -23,7 +23,7 @@ export default function ImagePreview({ layerData, currentLayer }) {
 											height={200}
 											className="basis-1/6 m-4"
 										/>
-										<p>{index + 1}</p>
+										<p>{index2 + 1}</p>
 									</div>
 								);
 							})}
