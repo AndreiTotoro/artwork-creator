@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { FiX } from 'react-icons/fi';
-import PreviewImages from '../components/PreviewImages';
+import ImagePreview from '../components/ImagePreview';
 import Upload from '../components/Upload';
 
 export default function Main({ currentLayer, layerData, setLayerData }) {
@@ -27,7 +27,7 @@ export default function Main({ currentLayer, layerData, setLayerData }) {
 				setLayerData={setLayerData}
 				currentLayer={currentLayer}
 			/>
-			<PreviewImages layerData={layerData} currentLayer={currentLayer} />
+			<ImagePreview layerData={layerData} currentLayer={currentLayer} />
 		</div>
 	);
 }
